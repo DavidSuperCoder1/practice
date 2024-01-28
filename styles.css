@@ -1,0 +1,719 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100px;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100px;
+}
+.container header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(21, 124, 90);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container header navbar {
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container header navbar img {
+  height: 75px;
+  width: 110px;
+  padding: 8px 0px 0px 4px;
+}
+.container header navbar button {
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid rgb(110, 115, 123);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.container header navbar button:hover {
+  background-color: rgb(113, 144, 236);
+  color: white;
+  border: 2px solid rgb(238, 241, 245);
+}
+.container main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container main .sidebar {
+  width: 250px;
+  min-height: 100%;
+  background-color: rgb(122, 36, 99);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container main .sidebar .sidebar-main {
+  margin: 10px;
+  width: 192px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(8, 110, 169);
+  border-radius: 10px;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 190px;
+  height: 97%;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper .list a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  width: 90%;
+  height: 35px;
+  background-color: rgb(25, 78, 78);
+  border-radius: 5px;
+  padding-left: 20px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper .list a svg {
+  fill: white;
+  width: 15px;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper .list a span {
+  font-size: 1.2em;
+  color: white;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper .list a:hover {
+  background-color: rgb(84, 160, 12);
+  border: 1px solid white;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper .list a:focus {
+  background-color: rgb(84, 160, 12);
+  border: 1px solid white;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper:first-child {
+  margin-top: 10px;
+}
+.container main .sidebar .sidebar-main .sidebar-wrapper:last-child {
+  margin-bottom: 10px;
+}
+.container main .sidebar hr {
+  width: 90%;
+  margin: 5px 0px 5px 0px;
+}
+.container main section {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgb(135, 127, 115);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container main section .main-container {
+  width: 98%;
+  min-height: 97%;
+  background-color: rgb(86, 111, 12);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px 0px;
+}
+.container main section .main-container .snd-main {
+  width: 97.5%;
+  min-height: 80px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px 2px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container main section .main-container .snd-main .menuCateContain {
+  width: 30%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(59, 11, 87);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-box-shadow: 1px 1px 2px 1px rgb(141, 137, 144);
+          box-shadow: 1px 1px 2px 1px rgb(141, 137, 144);
+}
+.container main section .main-container .snd-main .menuCateContain h3 {
+  color: white;
+  font-size: inherit;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+  text-align: center;
+  font-size: 2em;
+}
+.container main section .main-container .snd-main .menuCateContain h3:hover {
+  cursor: pointer;
+  color: rgb(39, 194, 5);
+  font-size: 1.2em;
+}
+.container main section .main-container .snd-main .menuCateContain h3:focus {
+  color: rgb(229, 133, 8);
+  font-size: 1.2em;
+}
+.container main section .main-container .snd-main .menuCateContain:hover {
+  background-color: rgb(6, 232, 14);
+  cursor: pointer;
+}
+.container main section .main-container .snd-main .menuCateContain:hover h3 {
+  color: rgb(160, 12, 101);
+  font-size: 2.6em;
+  font-weight: bolder;
+}
+.container main section .main-container .displayMenu {
+  width: 98%;
+  min-height: 50px;
+  background-color: rgb(9, 49, 65);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0px 10px 0px;
+  gap: 10px 0px;
+}
+.container main section .main-container .displayMenu .menu-card {
+  width: 30%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription {
+  width: 100%;
+  min-height: 220px;
+  background-color: rgb(61, 71, 61);
+  position: relative;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 7px;
+  -webkit-box-shadow: 1px 1px 2px 2px rgb(129, 127, 127);
+          box-shadow: 1px 1px 2px 2px rgb(129, 127, 127);
+}
+.container main section .main-container .displayMenu .menu-card .forDescription figure {
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription figure img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  top: -70px;
+  left: 50px;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription .description {
+  width: 90%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px 0px;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-header {
+  width: 100%;
+  min-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-header h3 {
+  font-size: 1.5em;
+  color: white;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-para {
+  width: 100%;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-para p {
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription .description .price {
+  width: 100%;
+  min-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+.container main section .main-container .displayMenu .menu-card .forDescription .description .price button {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid rgb(9, 217, 144);
+}
+.container main section .main-container .displayMenu .menu-card .forDescription .description .price button:hover {
+  background-color: rgb(19, 67, 107);
+  color: white;
+}
+
+@media screen and (max-width: 968px) {
+  body .container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  body .container header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(21, 124, 90);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container header navbar {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container header navbar button {
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(110, 115, 123);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  body .container header navbar button:hover {
+    background-color: rgb(113, 144, 236);
+    color: white;
+    border: 2px solid rgb(238, 241, 245);
+  }
+  body .container main {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .container main section .main-container .displayMenu {
+    gap: 0px 5px;
+  }
+  body .container main section .main-container .displayMenu .menu-card {
+    width: 40%;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription figure {
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription figure img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description {
+    width: 90%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px 0px;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-header {
+    width: 100%;
+    min-height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-header h3 {
+    font-size: 1.5em;
+    color: white;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-para {
+    width: 100%;
+    min-height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-para p {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .price {
+    width: 100%;
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .price button {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(9, 217, 144);
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .price button:hover {
+    background-color: rgb(19, 67, 107);
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .container {
+    width: 100%;
+  }
+  body .container header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(21, 124, 90);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container header navbar {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container header navbar button {
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(110, 115, 123);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  body .container header navbar button:hover {
+    background-color: rgb(113, 144, 236);
+    color: white;
+    border: 2px solid rgb(238, 241, 245);
+  }
+  body .container main {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .container main section .main-container .displayMenu {
+    gap: 0px 5px;
+  }
+  body .container main section .main-container .displayMenu .menu-card {
+    width: 70%;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription figure {
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription figure img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description {
+    width: 90%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px 0px;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-header {
+    width: 100%;
+    min-height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-header h3 {
+    font-size: 1.5em;
+    color: white;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-para {
+    width: 100%;
+    min-height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .descrip-para p {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .price {
+    width: 100%;
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .price button {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(9, 217, 144);
+  }
+  body .container main section .main-container .displayMenu .menu-card .forDescription .description .price button:hover {
+    background-color: rgb(19, 67, 107);
+    color: white;
+  }
+}
